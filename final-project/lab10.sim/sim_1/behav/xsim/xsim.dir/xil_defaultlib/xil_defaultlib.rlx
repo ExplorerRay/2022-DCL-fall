@@ -1,0 +1,14 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+C:/Users/Shlab_46/Desktop/project_v8.8/lab10.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
+C:/Users/Shlab_46/Desktop/project_v8.8/lab10.srcs/sources_1/clk_divider.v,1671105016,verilog,,C:/Users/Shlab_46/Desktop/project_v8.8/lab10.srcs/sources_1/new/debounce.v,,clk_divider,,,,,,,,
+C:/Users/Shlab_46/Desktop/project_v8.8/lab10.srcs/sources_1/lab10.v,1672323608,verilog,,,,lab10,,,,,,,,
+C:/Users/Shlab_46/Desktop/project_v8.8/lab10.srcs/sources_1/new/debounce.v,1671109112,verilog,,C:/Users/Shlab_46/Desktop/project_v8.8/lab10.srcs/sources_1/sram.v,,debounce,,,,,,,,
+C:/Users/Shlab_46/Desktop/project_v8.8/lab10.srcs/sources_1/new/sram_cloud.v,1671717948,verilog,,C:/Users/Shlab_46/Desktop/project_v8.8/lab10.srcs/sources_1/new/sram_ducks.v,,sram_cloud,,,,,,,,
+C:/Users/Shlab_46/Desktop/project_v8.8/lab10.srcs/sources_1/new/sram_ducks.v,1672323553,verilog,,C:/Users/Shlab_46/Desktop/project_v8.8/lab10.srcs/sources_1/new/sram_pikachus_and_ball.v,,sram_ducks,,,,,,,,
+C:/Users/Shlab_46/Desktop/project_v8.8/lab10.srcs/sources_1/new/sram_pikachus_and_ball.v,1671725040,verilog,,C:/Users/Shlab_46/Desktop/project_v8.8/lab10.srcs/sources_1/new/sram_score.v,,sram_pikachus_and_ball,,,,,,,,
+C:/Users/Shlab_46/Desktop/project_v8.8/lab10.srcs/sources_1/new/sram_score.v,1671718054,verilog,,C:/Users/Shlab_46/Desktop/project_v8.8/lab10.srcs/sources_1/vga_sync.v,,sram_score,,,,,,,,
+C:/Users/Shlab_46/Desktop/project_v8.8/lab10.srcs/sources_1/sram.v,1672319856,verilog,,C:/Users/Shlab_46/Desktop/project_v8.8/lab10.srcs/sources_1/new/sram_cloud.v,,sram,,,,,,,,
+C:/Users/Shlab_46/Desktop/project_v8.8/lab10.srcs/sources_1/vga_sync.v,1671105016,verilog,,C:/Users/Shlab_46/Desktop/project_v8.8/lab10.srcs/sources_1/lab10.v,,vga_sync,,,,,,,,

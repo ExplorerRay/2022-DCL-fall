@@ -1,0 +1,112 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Fri Dec 30 05:17:43 2022
+| Host         : DESKTOP-LVGPTE8 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab10_control_sets_placed.rpt
+| Design       : lab10
+| Device       : xc7a35ti
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    34 |
+|    Minimum number of control sets                        |    34 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   108 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    34 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     5 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    24 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              17 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             467 |          141 |
+| Yes          | No                    | No                     |              64 |           41 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             336 |          111 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+------------------------------------------+------------------------------------------+------------------+----------------+--------------+
+|    Clock Signal   |               Enable Signal              |             Set/Reset Signal             | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------+------------------------------------------+------------------------------------------+------------------+----------------+--------------+
+|  clk_divider0/CLK |                                          |                                          |                1 |              1 |         1.00 |
+|  clk_divider0/CLK |                                          | vs0/reset0                               |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG    | stick_counter0                           | stick_counter[3]_i_1_n_0                 |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG    |                                          | color_rage[3]_i_1_n_0                    |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG    | score_pika20                             | score_pika2[1]_i_1_n_0                   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG    | score_pika10                             | score_pika1[1]_i_1_n_0                   |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG    | stick_adjust0                            | stick_adjust[4]_i_1_n_0                  |                3 |              5 |         1.67 |
+|  clk_divider0/CLK | vs0/v_count_reg0                         | vs0/v_count_reg[9]_i_1_n_0               |                4 |             10 |         2.50 |
+|  clk_divider0/CLK | vs0/pixel_tick                           | vs0/h_count_reg[9]_i_1_n_0               |                4 |             10 |         2.50 |
+|  clk_IBUF_BUFG    | vs0/pixel_tick                           | vs0/SR[0]                                |               10 |             12 |         1.20 |
+|  clk_IBUF_BUFG    |                                          |                                          |                8 |             16 |         2.00 |
+|  clk_IBUF_BUFG    |                                          | debounced0/clear                         |                6 |             22 |         3.67 |
+|  clk_IBUF_BUFG    |                                          | debounced3/clear                         |                6 |             22 |         3.67 |
+|  clk_IBUF_BUFG    |                                          | debounced2/clear                         |                6 |             22 |         3.67 |
+|  clk_IBUF_BUFG    |                                          | debounced1/clear                         |                6 |             22 |         3.67 |
+|  clk_IBUF_BUFG    |                                          | ball_animation_clock[0]_i_1_n_0          |                7 |             26 |         3.71 |
+|  clk_IBUF_BUFG    |                                          | cloud_clock1[31]_i_1_n_0                 |                8 |             28 |         3.50 |
+|  clk_IBUF_BUFG    |                                          | cloud_clock2[31]_i_1_n_0                 |                7 |             28 |         4.00 |
+|  clk_IBUF_BUFG    |                                          | ducks_clock_x0                           |                8 |             30 |         3.75 |
+|  clk_IBUF_BUFG    | pika_clock1_x[29]_i_1_n_0                |                                          |               24 |             30 |         1.25 |
+|  clk_IBUF_BUFG    | p_0_in53_in                              | pika_positive_speed_clock2_y[33]_i_1_n_0 |                8 |             30 |         3.75 |
+|  clk_IBUF_BUFG    | p_0_in60_in                              | pika_positive_speed_clock1_y[33]_i_1_n_0 |               11 |             30 |         2.73 |
+|  clk_IBUF_BUFG    | vs0/ball_clock_y_reg[23]_0               | vs0/ball_clock_y_reg[23]                 |               11 |             31 |         2.82 |
+|  clk_IBUF_BUFG    |                                          | stick_clock[0]_i_1_n_0                   |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG    | pika_positive_speed_clock1_y[33]_i_2_n_0 | pika_positive_speed_clock1_y[33]_i_1_n_0 |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG    | pika_positive_speed_clock2_y[33]_i_2_n_0 | pika_positive_speed_clock2_y[33]_i_1_n_0 |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG    | wind_clock[0]_i_2_n_0                    | wind_clock[0]_i_1_n_0                    |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG    | debounced1/pika_clock2_x_reg[29]         | vs0/reset0                               |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG    |                                          | stick_smooth_clock[0]_i_1_n_0            |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG    | pika_negative_speed_clock1_y             | pika_negative_speed_clock1_y[0]_i_1_n_0  |                9 |             34 |         3.78 |
+|  clk_IBUF_BUFG    | pika_negative_speed_clock2_y             | debounced2/pika_jumping2_reg             |                9 |             34 |         3.78 |
+|  clk_IBUF_BUFG    | vs0/E[0]                                 |                                          |               17 |             34 |         2.00 |
+|  clk_IBUF_BUFG    |                                          | ball_clock_y[29]_i_1_n_0                 |               16 |             58 |         3.62 |
+|  clk_IBUF_BUFG    |                                          | vs0/reset0                               |               52 |            139 |         2.67 |
++-------------------+------------------------------------------+------------------------------------------+------------------+----------------+--------------+
+
+
