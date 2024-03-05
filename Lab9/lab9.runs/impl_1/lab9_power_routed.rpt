@@ -1,0 +1,270 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date             : Mon Dec  5 12:16:51 2022
+| Host             : LAPTOP-9GFSE4KI running 64-bit major release  (build 9200)
+| Command          : report_power -file lab9_power_routed.rpt -pb lab9_power_summary_routed.pb -rpx lab9_power_routed.rpx
+| Design           : lab9
+| Device           : xc7a35ticsg324-1L
+| Design State     : routed
+| Grade            : industrial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.559        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.497        |
+| Device Static (W)        | 0.062        |
+| Effective TJA (C/W)      | 4.8          |
+| Max Ambient (C)          | 97.3         |
+| Junction Temperature (C) | 27.7         |
+| Confidence Level         | Medium       |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.047 |        3 |       --- |             --- |
+| Slice Logic             |     0.185 |    32546 |       --- |             --- |
+|   LUT as Logic          |     0.155 |    12315 |     20800 |           59.21 |
+|   Register              |     0.016 |    16594 |     41600 |           39.89 |
+|   CARRY4                |     0.015 |     2149 |      8150 |           26.37 |
+|   LUT as Shift Register |    <0.001 |      148 |      9600 |            1.54 |
+|   Others                |     0.000 |      147 |       --- |             --- |
+| Signals                 |     0.258 |    27493 |       --- |             --- |
+| I/O                     |     0.006 |       14 |       210 |            6.67 |
+| Static Power            |     0.062 |          |           |                 |
+| Total                   |     0.559 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint    |       0.950 |     0.523 |       0.516 |      0.006 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.012 |       0.000 |      0.011 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       0.950 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc    |       1.800 |     0.018 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                               | Action                                                                                                     |
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                      |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                |                                                                                                            |
+| I/O nodes activity          | Medium     | More than 5% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes        | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                          |                                                                                                            |
+|                             |            |                                                       |                                                                                                            |
+| Overall confidence level    | Medium     |                                                       |                                                                                                            |
++-----------------------------+------------+-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 4.8                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------------+--------+-----------------+
+| Clock       | Domain | Constraint (ns) |
++-------------+--------+-----------------+
+| sys_clk_pin | clk    |            10.0 |
++-------------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-------------------------+-----------+
+| Name                    | Power (W) |
++-------------------------+-----------+
+| lab9                    |     0.497 |
+|   lcd0                  |     0.001 |
+|   md5_sec               |     0.240 |
+|     genblk1[10].md5_all |     0.002 |
+|     genblk1[11].md5_all |     0.002 |
+|     genblk1[12].md5_all |     0.002 |
+|     genblk1[13].md5_all |     0.002 |
+|     genblk1[14].md5_all |     0.002 |
+|     genblk1[15].md5_all |     0.002 |
+|     genblk1[16].md5_all |     0.002 |
+|     genblk1[17].md5_all |     0.002 |
+|     genblk1[18].md5_all |     0.002 |
+|     genblk1[19].md5_all |     0.002 |
+|     genblk1[20].md5_all |     0.002 |
+|     genblk1[21].md5_all |     0.002 |
+|     genblk1[22].md5_all |     0.002 |
+|     genblk1[23].md5_all |     0.002 |
+|     genblk1[24].md5_all |     0.002 |
+|     genblk1[25].md5_all |     0.002 |
+|     genblk1[26].md5_all |     0.002 |
+|     genblk1[27].md5_all |     0.002 |
+|     genblk1[28].md5_all |     0.002 |
+|     genblk1[29].md5_all |     0.002 |
+|     genblk1[30].md5_all |     0.002 |
+|     genblk1[31].md5_all |     0.002 |
+|     genblk1[32].md5_all |     0.002 |
+|     genblk1[33].md5_all |     0.002 |
+|     genblk1[34].md5_all |     0.002 |
+|     genblk1[35].md5_all |     0.002 |
+|     genblk1[36].md5_all |     0.002 |
+|     genblk1[37].md5_all |     0.002 |
+|     genblk1[38].md5_all |     0.002 |
+|     genblk1[39].md5_all |     0.002 |
+|     genblk1[40].md5_all |     0.002 |
+|     genblk1[41].md5_all |     0.002 |
+|     genblk1[42].md5_all |     0.002 |
+|     genblk1[43].md5_all |     0.002 |
+|     genblk1[44].md5_all |     0.002 |
+|     genblk1[45].md5_all |     0.002 |
+|     genblk1[46].md5_all |     0.002 |
+|     genblk1[47].md5_all |     0.002 |
+|     genblk1[48].md5_all |     0.002 |
+|     genblk1[49].md5_all |     0.002 |
+|     genblk1[4].md5_all  |     0.001 |
+|     genblk1[50].md5_all |     0.002 |
+|     genblk1[51].md5_all |     0.002 |
+|     genblk1[52].md5_all |     0.002 |
+|     genblk1[53].md5_all |     0.002 |
+|     genblk1[54].md5_all |     0.002 |
+|     genblk1[55].md5_all |     0.002 |
+|     genblk1[56].md5_all |     0.002 |
+|     genblk1[57].md5_all |     0.002 |
+|     genblk1[58].md5_all |     0.002 |
+|     genblk1[59].md5_all |     0.002 |
+|     genblk1[5].md5_all  |     0.001 |
+|     genblk1[60].md5_all |     0.002 |
+|     genblk1[61].md5_all |     0.002 |
+|     genblk1[62].md5_all |     0.002 |
+|     genblk1[63].md5_all |     0.002 |
+|     genblk1[6].md5_all  |     0.002 |
+|     genblk1[7].md5_all  |     0.002 |
+|     genblk1[8].md5_all  |     0.002 |
+|     genblk1[9].md5_all  |     0.002 |
+|   md5_tst               |     0.249 |
+|     genblk1[10].md5_all |     0.002 |
+|     genblk1[11].md5_all |     0.002 |
+|     genblk1[12].md5_all |     0.002 |
+|     genblk1[13].md5_all |     0.002 |
+|     genblk1[14].md5_all |     0.002 |
+|     genblk1[15].md5_all |     0.002 |
+|     genblk1[16].md5_all |     0.002 |
+|     genblk1[17].md5_all |     0.002 |
+|     genblk1[18].md5_all |     0.002 |
+|     genblk1[19].md5_all |     0.002 |
+|     genblk1[20].md5_all |     0.002 |
+|     genblk1[21].md5_all |     0.002 |
+|     genblk1[22].md5_all |     0.002 |
+|     genblk1[23].md5_all |     0.002 |
+|     genblk1[24].md5_all |     0.002 |
+|     genblk1[25].md5_all |     0.002 |
+|     genblk1[26].md5_all |     0.002 |
+|     genblk1[27].md5_all |     0.002 |
+|     genblk1[28].md5_all |     0.002 |
+|     genblk1[29].md5_all |     0.002 |
+|     genblk1[30].md5_all |     0.002 |
+|     genblk1[31].md5_all |     0.002 |
+|     genblk1[32].md5_all |     0.002 |
+|     genblk1[33].md5_all |     0.002 |
+|     genblk1[34].md5_all |     0.002 |
+|     genblk1[35].md5_all |     0.002 |
+|     genblk1[36].md5_all |     0.002 |
+|     genblk1[37].md5_all |     0.002 |
+|     genblk1[38].md5_all |     0.002 |
+|     genblk1[39].md5_all |     0.002 |
+|     genblk1[40].md5_all |     0.002 |
+|     genblk1[41].md5_all |     0.002 |
+|     genblk1[42].md5_all |     0.002 |
+|     genblk1[43].md5_all |     0.002 |
+|     genblk1[44].md5_all |     0.002 |
+|     genblk1[45].md5_all |     0.002 |
+|     genblk1[46].md5_all |     0.002 |
+|     genblk1[47].md5_all |     0.002 |
+|     genblk1[48].md5_all |     0.002 |
+|     genblk1[49].md5_all |     0.002 |
+|     genblk1[4].md5_all  |     0.001 |
+|     genblk1[50].md5_all |     0.002 |
+|     genblk1[51].md5_all |     0.002 |
+|     genblk1[52].md5_all |     0.002 |
+|     genblk1[53].md5_all |     0.002 |
+|     genblk1[54].md5_all |     0.002 |
+|     genblk1[55].md5_all |     0.002 |
+|     genblk1[56].md5_all |     0.002 |
+|     genblk1[57].md5_all |     0.002 |
+|     genblk1[58].md5_all |     0.002 |
+|     genblk1[59].md5_all |     0.002 |
+|     genblk1[5].md5_all  |     0.001 |
+|     genblk1[60].md5_all |     0.002 |
+|     genblk1[61].md5_all |     0.002 |
+|     genblk1[62].md5_all |     0.002 |
+|     genblk1[63].md5_all |     0.002 |
+|     genblk1[6].md5_all  |     0.002 |
+|     genblk1[7].md5_all  |     0.002 |
+|     genblk1[8].md5_all  |     0.002 |
+|     genblk1[9].md5_all  |     0.002 |
++-------------------------+-----------+
+
+

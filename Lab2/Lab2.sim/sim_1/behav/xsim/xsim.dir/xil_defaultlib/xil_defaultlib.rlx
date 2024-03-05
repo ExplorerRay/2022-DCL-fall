@@ -1,0 +1,8 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+D:/projects/DCL/Lab2/Lab2.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,,,,,,,
+D:/projects/DCL/Lab2/Lab2.srcs/sim_1/imports/數電實驗/mmult_tb.v,1663593496,verilog,,,,mmult_tb,,,,,,,,
+D:/projects/DCL/Lab2/Lab2.srcs/sources_1/imports/new/SeqMultiplier.v,1664000510,verilog,,D:/projects/DCL/Lab2/Lab2.srcs/sources_1/new/mmult.v,,SeqMultiplier,,,,,,,,
+D:/projects/DCL/Lab2/Lab2.srcs/sources_1/new/mmult.v,1664002072,verilog,,D:/projects/DCL/Lab2/Lab2.srcs/sim_1/imports/數電實驗/mmult_tb.v,,mmult,,,,,,,,

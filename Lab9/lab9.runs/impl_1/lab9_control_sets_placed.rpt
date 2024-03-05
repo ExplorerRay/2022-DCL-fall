@@ -1,0 +1,109 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
+| Date         : Mon Dec  5 12:15:02 2022
+| Host         : LAPTOP-9GFSE4KI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab9_control_sets_placed.rpt
+| Design       : lab9
+| Device       : xc7a35ti
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    31 |
+|    Minimum number of control sets                        |    31 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   118 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    31 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |    17 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    12 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |           15598 |         2722 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             345 |           87 |
+| Yes          | No                    | No                     |             433 |          105 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             218 |           53 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------+----------------------------------------+----------------------------+------------------+----------------+--------------+
+|              Clock Signal             |              Enable Signal             |      Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------------------+----------------------------------------+----------------------------+------------------+----------------+--------------+
+|  FSM_sequential_P_next_reg[1]_i_2_n_0 |                                        |                            |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG                        | tm_cnt/genblk1[0].B/Ci[1]_5            | md5_tst/rst0               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                        | tm_cnt/genblk1[0].B/sum[3]_i_1__13_n_0 | md5_tst/rst0               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                        | tm_cnt/genblk1[1].B/E[0]               | md5_tst/rst0               |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG                        | tm_cnt/genblk1[2].B/E[0]               | md5_tst/rst0               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                        | tm_cnt/genblk1[3].B/E[0]               | md5_tst/rst0               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                        | tm_cnt/genblk1[4].B/E[0]               | md5_tst/rst0               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                        | tm_cnt/genblk1[5].B/E[0]               | md5_tst/rst0               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                        | lcd0/icode                             |                            |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                        | lcd0/tcode[3]_i_1_n_0                  |                            |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG                        | guess/genblk1[2].B/E[0]                | md5_tst/rst0               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                        | guess/genblk1[0].B/E[0]                | md5_tst/rst0               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                        | guess/genblk1[0].B/valid_reg[0]        | md5_tst/rst0               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                        | guess/genblk1[3].B/Ci[4]_5             | md5_tst/rst0               |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG                        | guess/genblk1[4].B/E[0]                | md5_tst/rst0               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                        | guess/genblk1[5].B/E[0]                | md5_tst/rst0               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                        | guess/genblk1[6].B/E[0]                | md5_tst/rst0               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                        | md5_tst/valid                          | md5_tst/rst0               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                        | lcd0/lcd_initialized_reg_n_0           | md5_tst/rst0               |                2 |              7 |         3.50 |
+|  clk_IBUF_BUFG                        |                                        | clk_cnt[17]_i_1_n_0        |                3 |             18 |         6.00 |
+|  clk_IBUF_BUFG                        | lcd0/lcd_initialized_reg_n_0           | lcd0/text_count[0]_i_1_n_0 |                7 |             25 |         3.57 |
+|  clk_IBUF_BUFG                        | row_B[75]_i_2_n_0                      | row_B[75]_i_1_n_0          |                9 |             28 |         3.11 |
+|  clk_IBUF_BUFG                        | lcd0/init_e_i_1_n_0                    | md5_tst/rst0               |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG                        | md5_sec/E[0]                           | md5_tst/rst0               |                5 |             33 |         6.60 |
+|  clk_IBUF_BUFG                        | md5_tst/valid_reg_0[0]                 | md5_tst/rst0               |                5 |             33 |         6.60 |
+|  clk_IBUF_BUFG                        | row_A[113]_i_1_n_0                     |                            |               15 |             41 |         2.73 |
+|  clk_IBUF_BUFG                        | reset_n_IBUF                           |                            |               11 |             64 |         5.82 |
+|  clk_IBUF_BUFG                        | md5_sec/p_0_in                         |                            |               37 |            160 |         4.32 |
+|  clk_IBUF_BUFG                        | md5_tst/p_0_in                         |                            |               38 |            160 |         4.21 |
+|  clk_IBUF_BUFG                        |                                        | md5_tst/rst0               |               84 |            327 |         3.89 |
+|  clk_IBUF_BUFG                        |                                        |                            |             2723 |          15744 |         5.78 |
++---------------------------------------+----------------------------------------+----------------------------+------------------+----------------+--------------+
+
+

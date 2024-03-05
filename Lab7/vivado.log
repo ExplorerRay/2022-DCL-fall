@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Nov 20 17:46:46 2022
+# Process ID: 11100
+# Current directory: C:/Users/Shlab_27/Downloads/Lab7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10704 C:\Users\Shlab_27\Downloads\Lab7\lab_7.xpr
+# Log file: C:/Users/Shlab_27/Downloads/Lab7/vivado.log
+# Journal file: C:/Users/Shlab_27/Downloads/Lab7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 20 17:47:11 2022...

@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Nov 18 20:59:39 2022
+# Process ID: 5336
+# Current directory: D:/projects/DCL/Lab7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21820 D:\projects\DCL\Lab7\lab_7.xpr
+# Log file: D:/projects/DCL/Lab7/vivado.log
+# Journal file: D:/projects/DCL/Lab7\vivado.jou
+# Running On: LAPTOP-9GFSE4KI, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 25559 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/projects/DCL/Lab7/lab_7.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+report_utilization -name utilization_1
+update_compile_order -fileset sources_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+report_utilization -name utilization_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design
+open_run impl_1
+report_utilization -name utilization_1

@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/projects/DCL/Lab7/lab_7.srcs/sources_1/LCD_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LCD_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/projects/DCL/Lab7/lab_7.srcs/sources_1/debounce.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/projects/DCL/Lab7/lab_7.srcs/sources_1/sram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sram
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/projects/DCL/Lab7/lab_7.srcs/sources_1/imports/new/uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/projects/DCL/Lab7/lab_7.srcs/sources_1/lab7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab7

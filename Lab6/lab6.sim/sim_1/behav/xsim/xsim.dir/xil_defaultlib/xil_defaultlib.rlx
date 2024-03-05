@@ -1,0 +1,8 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+D:/projects/DCL/Lab6/lab6.sim/sim_1/behav/xsim/glbl.v,1663560240,verilog,,,,glbl,,,,,,,,
+D:/projects/DCL/Lab6/lab6.srcs/sources_1/new/lab6.v,1667886649,verilog,,D:/projects/DCL/Lab6/lab6.srcs/sources_1/new/uart.v,,lab6,,,,,,,,
+D:/projects/DCL/Lab6/lab6.srcs/sources_1/new/lab6_tb.v,1663560244,verilog,,,,lab6_tb,,,,,,,,
+D:/projects/DCL/Lab6/lab6.srcs/sources_1/new/uart.v,1663560244,verilog,,D:/projects/DCL/Lab6/lab6.srcs/sources_1/new/lab6_tb.v,,uart,,,,,,,,

@@ -1,0 +1,19 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/chore/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lab7_behav xil_defaultlib.lab7 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/projects/DCL/Lab7/lab_7.srcs/sources_1/LCD_module.v" Line 13. Module LCD_module doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/projects/DCL/Lab7/lab_7.srcs/sources_1/LCD_module.v" Line 13. Module LCD_module doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LCD_module
+Compiling module xil_defaultlib.debounce
+Compiling module xil_defaultlib.sram
+Compiling module xil_defaultlib.uart
+Compiling module xil_defaultlib.lab7
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot lab7_behav

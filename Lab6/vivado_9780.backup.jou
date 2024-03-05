@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Oct 31 15:34:07 2022
+# Process ID: 9780
+# Current directory: D:/projects/DCL/Lab6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5784 D:\projects\DCL\Lab6\lab6.xpr
+# Log file: D:/projects/DCL/Lab6/vivado.log
+# Journal file: D:/projects/DCL/Lab6\vivado.jou
+# Running On: LAPTOP-9GFSE4KI, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 25559 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/projects/DCL/Lab6/lab6.xpr
+upgrade_project -migrate_output_products
+update_compile_order -fileset sources_1
